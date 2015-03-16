@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sign Up</title>
+
+<style>
+
+a:link { color: blue; }
+		a:visited { color: black; }
+		a:hover { color: blue; }
+		a:active { color: black; }
+
+a:link {text-decoration: none;}
+		a:visited {text-decoration: none;}
+		a:hover {text-decoration: none;}
+		a:active {text-decoration: none;}
+
+</style>
+<script>
+		function approove()
+			{
+				if(document.feedform.fname.value == "")
+				{
+					window.alert("Please enter your name");
+					document.feedform.fname.focus();
+					return false;
+				}
+				
+				if(document.feedform.mail.value == "")
+				{
+					window.alert("Please enter your email address");
+					document.feedform.mail.focus();
+					return false;
+				}
+				
+				if(document.feedform.tnc.value == "agree")
+				{
+					window.alert("Please read the terms and condition");
+					document.feedform.tnc.focus();
+					return false;
+				}
+				
+			}
+		
+</script>
+
+</head>
+<body>
+<font face="arial black" color="black" size=2>Personl Details</td>
+<form name="feedform" onsubmit="return approove()" >
+
+			<center><table id=t1>
+				<tr>
+					<td> <font face="arial black" color="black" size=2>
+						Name <font face="arial black" color="red" size=2>*</font> 
+					</font></td>
+					
+					<td>:</td>
+					
+					<td>
+						<input type=text name="fname" size="50">
+					</td>
+				</tr>
+				
+				<tr><td colspan="3"> &nbsp; </td></tr>
+				
+				<tr>
+					<td> <font face="arial black" color="black" size=2>
+						Email <font face="arial black" color="red" size=2>*</font>
+					</font></td>
+					
+					<td>:</td>
+					
+					<td>
+						<input type=text name="mail" size="50">
+					</td>
+				</tr>
+				
+				<tr><td colspan="3"> &nbsp; </td></tr>
+				
+				<tr>
+					<td> <font face="arial black" color="black" size=2>
+						Game Type
+					</font></td>
+					
+					<td>:</td>
+					
+					<td
+						colspan=3><input type="checkbox" name="badminton" value="newsletter" />Badminton
+						<br/><br/>
+						<input type="checkbox" name="futsal" value="newsletter" />Futsal
+						<br/><br/>
+						<input type="checkbox" name="tennis" value="newsletter" />Table Tennis
+						<br/><br/>
+						<input type="checkbox" name="volley" value="newsletter" />Volleyball</td>
+					
+				</tr>
+				
+				<tr><td colspan="3"> &nbsp; </td></tr>
+				
+				<tr>
+				<th><font face="arial black" color="black" size=2>
+						Area
+				</font></th>
+					
+					<td>:</td>
+					
+					<td>
+						<select name="area">
+				
+							<option value=JH>JOHOR</option>
+							<option value=ML>MALACCA</option>
+							<option value=PH>PAHANG</option>
+							<option value=KD>KEDAH</option>
+							<option value=PP>P.PINANG</option>
+							<option value=PR>PERAK</option>
+							<option value=TR>TERENGGANU</option>
+							<option value=KT>KELANTAN</option>
+					</td>
+				</tr>
+				
+				<tr><td colspan="3"> &nbsp; </td></tr>
+				
+				<tr>
+					<td> <font face="arial black" color="black" size=2>
+						Mobile
+					</font></td>
+					
+					<td>:</td>
+					
+					<td>
+						<input type=text name="mobile" size="50">
+					</td>
+				</tr>
+				
+				<tr><td colspan="3"> &nbsp; </td></tr>
+				
+				<tr>
+					<td> <font face="arial black" color="black" size=2>
+						Gender
+					</font></td>
+					
+					<td>:</td>
+					
+					<td>
+					<input type="radio" name="gender" value="female" /> Female
+					<input type="radio" name="gender" value="male" /> Male
+					</td>
+				</tr>
+				
+				<tr><td colspan="3"> &nbsp; </td></tr>
+				
+				<tr>
+					
+					<td
+						colspan=3><input type="checkbox" name="tnc" value="agree" />I have agree with the <a href="t&c.html">term and conditions</a> of this website</td> 
+						<br/><br/>
+					</tr>
+				
+				<tr>
+					<td colspan=3>
+					<center> <input type=submit value="Sign Up" /><input type=reset value=Reset /> 
+					</td>
+				</tr>
+				
+			
+			
+				
+</table></center>
+</form>
+<br/>
+
+</body>
+</html>
