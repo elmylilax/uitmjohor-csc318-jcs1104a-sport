@@ -1,59 +1,154 @@
 <html>
 	<head>
-		<title> sport </title>
-	</head>
+		<title>SCR</title>
+		<style>
+		
+		a:link
+		{
+			text-decoration:none;
+			color:#686868;
+		}
 	
-	<body>
-		<font face="areal black" style="color:grey">
-		 <center>
-		<table border=1 width=70%>	
+		a:visited
+		{
+			color:#686868;
+		}
 		
-			<tr>
-				<td style="text-align:center"> <a href="index.html"> SPORT </a></td>
-				<td style="text-align:center"> <a href="booking.html"> BOOKING </a></td>
-				<td style="text-align:center"> <a href="gallery.html"> GALLERY </a></td>
-				<td style="text-align:center"> <a href="signin.html"> SIGN IN </a></td>
-				<td style="text-align:center"> <a href="signup.html"> SIGN UP </a></td>
-			</tr>
-		</table>
+		a:hover
+		{
+			color:white;
+		}
+		#top
+		{
+			font-family:Light,Segoe UI,Arial;
+			font-weight:400;
+			background:rgba(0,0,0,.9);
+			color:#fff;
+			padding-bottom:1rem;
+			padding-top:1rem;
+			padding-left:2rem;
+			padding-right:2rem;
+			width:80%;
+			border-radius:3px;
+			float:center;
+			font-size:15px
+		}
+		#centersection
+		{
+			font-family:Light,Segoe UI,Arial;
+			font-weight:100;
+			background-color:white;
+			color:#fff;
+			padding:1rem;
+			width:70%;
+			height:83%;
+			margin:0rem;
+			border-radius:3px;
+			float:center;
+			font-size:15px
+		}
+		input#gobutton
+		{
+			cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+			padding:5px 10px; /*add some padding to the inside of the button*/
+			background:#35b128; /*the colour of the button*/
+			border:1px solid #33842a; /*required or the default border for the browser will appear*/
+			/*curve corner*/
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			/*give the button a drop shadow*/
+			-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+			-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+			box-shadow: 0 0 4px rgba(0,0,0, .75);
+			/*text*/
+			color:#f3f3f3;
+			font-size:12;
+		}
+		/***hover***/
+		input#gobutton:hover, input#gobutton:focus{
+		background-color :#399630; /*make the background a little darker*/
+		/*reduce the drop shadow size to give a pushed button effect*/
+		-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+		-moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+		box-shadow: 0 0 1px rgba(0,0,0, .75);
+		}
+		</style>
+		<style>
+			.style-1 input[type="text"]
+			{
+				padding: 10px;
+				border: solid 1px #dcdcdc;
+				transition: box-shadow 0.3s, border 0.3s;
+			}
+			.style-1 input[type="text"]:focus,
+			.style-1 input[type="text"].focus
+			{
+				border: solid 1px #707070;
+				box-shadow: 0 0 5px 1px #969696;
+			}
+		</style>
+	</head>
+	<body background="Media/background1.jpg" style="background-repeat:no-repeat;background-size: 120% 120%;">
+
+		<div id="top" style="margin-left:auto;margin-right:auto;">
 		
-		<form>
-			<fieldset>
-			<legend> Services that we provide </legend>
-			</fieldset>
+			<font color="white"><b>HOME</b></font> |
+			<a href="aboutus.html">ABOUT US</a> |
+			<a href="sports.html">SPORTS</a> |
+			<a href="gallery.html">GALLERY</a> |
+			<a href="contactus.html">CONTACT US</a>
+
+			<div id="input-list style-1 clearfix" style="float:right;"><form>
+				<font color="#686868">USERNAME: <input type="text" name="username"></input>&nbsp;&nbsp;&nbsp;PASSWORD: <input type="PASSWORD" name="password"></input></font>
+				&nbsp;<input id="gobutton" type="submit" value="Go!" />
+			</div></form>
+		</div>
+		<br>
+		<div id="centersection" style="margin-left:auto;margin-right:auto;">
+			<div 
+				id="testing" 
+				style="collage:center;  
+				overflow:hidden; 
+				border-style:dashed; 
+				border-width:0px;"
+				>
+				<p style="margin-top:530px;">
+					<a>
+				</p>
+			</div>
 			
-			<fieldset>
-			<legend> Our facility in a gallery </legend>
-			</fieldset>
-			
-			<fieldset>
-			<legend> About us </legend>
-			</fieldset>
-			
-			<fieldset>
-			<legend> Find us </legend>
-			</fieldset>
-			
-			<fieldset>
-			<legend> Contact us </legend>
-			</fieldset>
-			
-		</form>	
-		
-		
-		
-		
-		<table border=0 width=70%>	
-		
-			<tr>
-				<td style="text-align:center"> <a href="signin.html"> SIGN IN </a></td>
-				<td style="text-align:center"> <a href="signup.html"> SIGN UP </a></td>
-			</tr>
-		</table>
-		</font>
-		</center>
-		<font face="areal black" style="color:grey"> <p style="text-align: center">  copy right@2015 SPORT CENTER </p> </font>
+			<script type="text/javascript">
+				var imageArray = new Array(); 
+
+				// Specify number of milliseconds between image switches.
+				var switchMilliseconds = 3000;
+
+				// Specify the id of the div or other HTML tag with the 
+				//   background image to switch.
+
+				var divID = 'testing';
+
+				imageArray[0] = "Media/players/bd1.jpg";
+				imageArray[1] = "Media/players/ft1.jpg";
+				imageArray[2] = "Media/players/pp1.jpg";
+				imageArray[3] = "Media/players/bd2.jpg";
+				imageArray[4] = "Media/players/ft2.jpg";
+				imageArray[5] = "Media/players/pp2.jpg";
+				imageArray[6] = "Media/players/bd3.jpg";
+				imageArray[7] = "Media/players/ft3.jpg";
+				imageArray[8] = "Media/players/pp3.jpg";
+				function publishPicture(i) 
+				{
+					document.getElementById(divID).style.background = 'url("'+imageArray[i]+'")';
+					i++;
+					if( i > (imageArray.length - 1) ) { i = 0; }
+					setTimeout('publishPicture('+i+')',switchMilliseconds);
+				}
+				publishPicture(0);
+			</script> 
+		</div>
 	</body>
-
-
 </html>
+
+		
